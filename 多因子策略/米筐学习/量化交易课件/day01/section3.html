@@ -1,0 +1,1465 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>数据获取接口 | 量化交易课程定位、目标</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../day01/section4.html" />
+    
+    
+    <link rel="prev" href="../day01/section2.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.3"
+        data-chapter-title="数据获取接口"
+        data-filepath="day01/section3.md"
+        data-basepath=".."
+        data-revision="Mon May 14 2018 17:22:16 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        量化交易课程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="Quantitative_trading/index.html">
+            
+                
+                    <a href="../Quantitative_trading/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        量化交易简介
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="Quantitative_trading/section1.html">
+            
+                
+                    <a href="../Quantitative_trading/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        什么是量化交易
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Quantitative_trading/section2.html">
+            
+                
+                    <a href="../Quantitative_trading/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        量化交易分类
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Quantitative_trading/section3.html">
+            
+                
+                    <a href="../Quantitative_trading/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        量化交易历史
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Quantitative_trading/section4.html">
+            
+                
+                    <a href="../Quantitative_trading/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        量化交易项目做什么
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="day01/index.html">
+            
+                
+                    <a href="../day01/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        量化回测框架介绍
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="day01/section1.html">
+            
+                
+                    <a href="../day01/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        回测框架介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="day01/section2.html">
+            
+                
+                    <a href="../day01/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        策略创建运行流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="day01/section3.html">
+            
+                
+                    <a href="../day01/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        数据获取接口
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="day01/section4.html">
+            
+                
+                    <a href="../day01/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        回测交易接口
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="day01/section5.html">
+            
+                
+                    <a href="../day01/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        策略评价指标
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="day01/section6.html">
+            
+                
+                    <a href="../day01/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        实现第一个股票策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="day01/section7.html">
+            
+                
+                    <a href="../day01/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="day01/section8.html">
+            
+                
+                    <a href="../day01/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="day02/index.html">
+            
+                
+                    <a href="../day02/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        多因子策略1
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="day02/section1.html">
+            
+                
+                    <a href="../day02/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        股票量化策略介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="day02/section2.html">
+            
+                
+                    <a href="../day02/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Alpha与Beta
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="day02/section3.html">
+            
+                
+                    <a href="../day02/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        多因子策略与理论介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="day02/section4.html">
+            
+                
+                    <a href="../day02/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        多因子策略流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="day02/section5.html">
+            
+                
+                    <a href="../day02/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        因子数据处理-去极值
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="day02/section6.html">
+            
+                
+                    <a href="../day02/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        因子数据处理-标准化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="day02/section7.html">
+            
+                
+                    <a href="../day02/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        因子数据处理-市值中性化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="day02/section8.html">
+            
+                
+                    <a href="../day02/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="day02/section9.html">
+            
+                
+                    <a href="../day02/section9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="day03/index.html">
+            
+                
+                    <a href="../day03/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        多因子策略2
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="day03/section1.html">
+            
+                
+                    <a href="../day03/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        多因子的筛选阶段介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="day03/section2.html">
+            
+                
+                    <a href="../day03/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        单因子有效性分析目的
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="day03/section3.html">
+            
+                
+                    <a href="../day03/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        单因子有效性分析-因子IC分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="day03/section4.html">
+            
+                
+                    <a href="../day03/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        单因子有效性分析-因子收益率分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="day03/section5.html">
+            
+                
+                    <a href="../day03/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        单因子测试框架和单因子回测框架搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="day03/section6.html">
+            
+                
+                    <a href="../day03/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        分组动手练习
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="day03/section7.html">
+            
+                
+                    <a href="../day03/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        多因子相关性分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="day03/section8.html">
+            
+                
+                    <a href="../day03/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        多因子合成
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="day03/section9.html">
+            
+                
+                    <a href="../day03/section9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="day03/section10.html">
+            
+                
+                    <a href="../day03/section10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="day04/index.html">
+            
+                
+                    <a href="../day04/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        多因子策略3
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="day04/section1.html">
+            
+                
+                    <a href="../day04/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        多因子策略-回测阶段介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="day04/section2.html">
+            
+                
+                    <a href="../day04/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        多因子打分法选股
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="day04/section3.html">
+            
+                
+                    <a href="../day04/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        多因子回归法选股
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="day04/section4.html">
+            
+                
+                    <a href="../day04/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        技术分析策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="day04/section5.html">
+            
+                
+                    <a href="../day04/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        模拟交易
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="day04/section6.html">
+            
+                
+                    <a href="../day04/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="day04/section7.html">
+            
+                
+                    <a href="../day04/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >量化交易课程定位、目标</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x6570;&#x636E;&#x83B7;&#x53D6;&#x63A5;&#x53E3;">&#x6570;&#x636E;&#x83B7;&#x53D6;&#x63A5;&#x53E3;</h1>
+<h2 id="&#x5B66;&#x4E60;&#x76EE;&#x6807;">&#x5B66;&#x4E60;&#x76EE;&#x6807;</h2>
+<ul>
+<li>&#x76EE;&#x6807;<ul>
+<li>&#x5E94;&#x7528;industry&#x5B9E;&#x73B0;&#x884C;&#x4E1A;&#x80A1;&#x7968;&#x5217;&#x8868;&#x7684;&#x83B7;&#x53D6;</li>
+<li>&#x5E94;&#x7528;history_bars&#x5B9E;&#x73B0;&#x80A1;&#x7968;&#x5408;&#x7EA6;&#x5386;&#x53F2;&#x884C;&#x60C5;&#x6570;&#x636E;&#x83B7;&#x53D6;</li>
+<li>&#x5E94;&#x7528;get_fundamentals&#x5B9E;&#x73B0;&#x80A1;&#x7968;&#x57FA;&#x672C;&#x9762;&#x6570;&#x636E;&#x83B7;&#x53D6;</li>
+<li>&#x4F7F;&#x7528;query&#x7684;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x5B8C;&#x6210;&#x80A1;&#x7968;&#x6570;&#x636E;&#x7684;&#x8FC7;&#x6EE4;</li>
+<li>&#x5E94;&#x7528;scheduler&#x5B9A;&#x65F6;&#x5668;&#x5B9E;&#x73B0;&#x80A1;&#x7968;&#x6570;&#x636E;&#x5B9A;&#x671F;&#x83B7;&#x53D6;</li>
+</ul>
+</li>
+<li>&#x5E94;&#x7528;<ul>
+<li>&#x65E0;</li>
+</ul>
+</li>
+</ul>
+<h2 id="1&#x3001;-&#x6570;&#x636E;&#x63A5;&#x53E3;&#x79CD;&#x7C7B;">1&#x3001; &#x6570;&#x636E;&#x63A5;&#x53E3;&#x79CD;&#x7C7B;</h2>
+<ul>
+<li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x884C;&#x4E1A;&#x3001;&#x677F;&#x5757;&#x80A1;&#x7968;&#x5217;&#x8868;</li>
+<li>history_bars - &#x6307;&#x5B9A;&#x80A1;&#x7968;&#x5408;&#x7EA6;&#x5386;&#x53F2;&#x6570;&#x636E;</li>
+<li>get_fundamentals - &#x67E5;&#x8BE2;&#x8D22;&#x52A1;&#x6570;&#x636E;</li>
+</ul>
+<h2 id="2&#x3001;-&#x83B7;&#x53D6;&#x884C;&#x4E1A;&#x3001;&#x677F;&#x5757;&#x4EE5;&#x53CA;&#x6982;&#x5FF5;&#x80A1;&#x7968;&#x5217;&#x8868;">2&#x3001; &#x83B7;&#x53D6;&#x884C;&#x4E1A;&#x3001;&#x677F;&#x5757;&#x4EE5;&#x53CA;&#x6982;&#x5FF5;&#x80A1;&#x7968;&#x5217;&#x8868;</h2>
+<h3 id="21-&#x5173;&#x4E8E;&#x80A1;&#x7968;&#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x4EE3;&#x7801;&#x8865;&#x9F50;">2.1 &#x5173;&#x4E8E;&#x80A1;&#x7968;&#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x4EE3;&#x7801;&#x8865;&#x9F50;</h3>
+<h4 id="ricequant&#x4E0A;&#x7684;&#x80A1;&#x7968;&#x4EE3;&#x7801;&#x6807;&#x8BB0;">RiceQuant&#x4E0A;&#x7684;&#x80A1;&#x7968;&#x4EE3;&#x7801;&#x6807;&#x8BB0;</h4>
+<p><img src="../images/&#x80A1;&#x7968;&#x4EE3;&#x53F7;.png" alt="&#x80A1;&#x7968;&#x4EE3;&#x53F7;"></p>
+<h4 id="&#x80A1;&#x7968;&#x81EA;&#x52A8;&#x641C;&#x7D22;&#x53CA;&#x8865;&#x5168;">&#x80A1;&#x7968;&#x81EA;&#x52A8;&#x641C;&#x7D22;&#x53CA;&#x8865;&#x5168;</h4>
+<ul>
+<li><strong>Windows &#x7528;&#x6237;</strong> &#xFF1A; &#x8F93;&#x5165;ctrl + i</li>
+<li><strong>Mac &#x7528;&#x6237;</strong> &#xFF1A;&#x8F93;&#x5165;command + i</li>
+<li><strong>Linux &#x7528;&#x6237;</strong> &#xFF1A;&#x8F93;&#x5165;ctrl + i</li>
+</ul>
+<p>&#x5F53;&#x60A8;&#x8F93;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x7EC4;&#x5408;&#x952E;&#x4E4B;&#x540E;&#xFF0C;Ricequant&#x5728;&#x7EBF;IDE&#x5C31;&#x4F1A;&#x8FDB;&#x5165;&#x80A1;&#x7968;&#x4EE3;&#x7801;&#x641C;&#x7D22;&#x548C;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x6A21;&#x5F0F;&#xFF0C;&#x63A5;&#x7740;&#x60A8;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x4EFB;&#x4F55;&#x4E00;&#x79CD;&#x8FDB;&#x884C;&#x641C;&#x7D22;&#x548C;&#x81EA;&#x52A8;&#x8865;&#x5168;&#xFF1A;</p>
+<ul>
+<li><strong>&#x80A1;&#x7968;&#x6570;&#x5B57;&#x4EE3;&#x7801;</strong> - &#x81EA;&#x52A8;&#x8865;&#x5168;&#x4E3A;&#x80A1;&#x7968;&#x6570;&#x5B57;&#x4EE3;&#x7801;&#xFF0C;&#x6BD4;&#x5982;<strong>&quot;000024.XSHE&quot;</strong>&#xFF1A;</li>
+<li><strong>&#x80A1;&#x7968;&#x4E2D;&#x6587;&#x5168;&#x79F0;</strong> - &#x81EA;&#x52A8;&#x8865;&#x5168;&#x4E3A;&#x80A1;&#x7968;&#x4E2D;&#x6587;&#x5168;&#x79F0;&#xFF0C;&#x6BD4;&#x5982;<strong>&quot;&#x62DB;&#x5546;&#x5730;&#x4EA7;&quot;</strong></li>
+<li><strong>&#x80A1;&#x7968;&#x62FC;&#x97F3;&#x7F29;&#x5199;</strong> - &#x8FD9;&#x91CC;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#xFF0C;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x4E3A;&#x80A1;&#x7968;<strong>&#x4E2D;&#x6587;&#x5168;&#x79F0;</strong>&#xFF0C;&#x56E0;&#x4E3A;&#x80A1;&#x7968;&#x62FC;&#x97F3;&#x7F29;&#x5199;&#x5E76;&#x4E0D;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#xFF0C;&#x6BD4;&#x5982;ZSDC&#x8865;&#x5168;&#x4E3A;<strong>&quot;&#x62DB;&#x5546;&#x5730;&#x4EA7;&quot;</strong></li>
+</ul>
+<h3 id="22-&#x83B7;&#x53D6;&#x884C;&#x4E1A;">2.2 &#x83B7;&#x53D6;&#x884C;&#x4E1A;</h3>
+<h4 id="industry--&#x884C;&#x4E1A;&#x80A1;&#x7968;&#x5217;&#x8868;">industry - &#x884C;&#x4E1A;&#x80A1;&#x7968;&#x5217;&#x8868;</h4>
+<pre><code>industry(code)
+</code></pre><p>&#x83B7;&#x5F97;&#x5C5E;&#x4E8E;&#x67D0;&#x4E00;&#x884C;&#x4E1A;&#x7684;&#x6240;&#x6709;&#x80A1;&#x7968;&#x5217;&#x8868;&#x3002;</p>
+<h5 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td><em>str</em> OR <em>industry_code item</em></td>
+<td>&#x884C;&#x4E1A;&#x540D;&#x79F0;&#x6216;&#x884C;&#x4E1A;&#x4EE3;&#x7801;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x519C;&#x4E1A;&#x53EF;&#x586B;&#x5199;industry_code.A01 &#x6216; &apos;A01&apos;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x8FD4;&#x56DE;">&#x8FD4;&#x56DE;</h5>
+<p>&#x83B7;&#x5F97;&#x5C5E;&#x4E8E;&#x67D0;&#x4E00;&#x884C;&#x4E1A;&#x7684;&#x6240;&#x6709;&#x80A1;&#x7968;&#x7684;order_book_id list&#x3002;</p>
+<h5 id="&#x8303;&#x4F8B;">&#x8303;&#x4F8B;</h5>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">init</span><span class="hljs-params">(context)</span>:</span>
+    stock_list = industry(<span class="hljs-string">&apos;A01&apos;</span>)
+    logger.info(<span class="hljs-string">&quot;&#x519C;&#x4E1A;&#x80A1;&#x7968;&#x5217;&#x8868;&#xFF1A;&quot;</span> + str(stock_list))
+</code></pre>
+<h3 id="23-&#x83B7;&#x53D6;&#x677F;&#x5757;">2.3 &#x83B7;&#x53D6;&#x677F;&#x5757;</h3>
+<h4 id="sector--&#x677F;&#x5757;&#x80A1;&#x7968;&#x5217;&#x8868;">sector - &#x677F;&#x5757;&#x80A1;&#x7968;&#x5217;&#x8868;</h4>
+<pre><code class="lang-python">sector(code)
+</code></pre>
+<p>&#x83B7;&#x5F97;&#x5C5E;&#x4E8E;&#x67D0;&#x4E00;&#x677F;&#x5757;&#x7684;&#x6240;&#x6709;&#x80A1;&#x7968;&#x5217;&#x8868;&#x3002;</p>
+<h5 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td><em>str</em> OR <em>sector_code items</em></td>
+<td>&#x677F;&#x5757;&#x540D;&#x79F0;&#x6216;&#x677F;&#x5757;&#x4EE3;&#x7801;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x80FD;&#x6E90;&#x677F;&#x5757;&#x53EF;&#x586B;&#x5199;&apos;Energy&apos;&#x3001;&apos;&#x80FD;&#x6E90;&apos;&#x6216;sector_code.Energy</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x8FD4;&#x56DE;">&#x8FD4;&#x56DE;</h5>
+<p>&#x5C5E;&#x4E8E;&#x8BE5;&#x677F;&#x5757;&#x7684;&#x80A1;&#x7968;order_book_id&#x6216;order_book_id list.</p>
+<h5 id="&#x8303;&#x4F8B;">&#x8303;&#x4F8B;</h5>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">init</span><span class="hljs-params">(context)</span>:</span>
+    ids1 = sector(<span class="hljs-string">&quot;consumer discretionary&quot;</span>)
+    ids2 = sector(<span class="hljs-string">&quot;&#x975E;&#x5FC5;&#x9700;&#x6D88;&#x8D39;&#x54C1;&quot;</span>)
+    ids3 = sector(<span class="hljs-string">&quot;ConsumerDiscretionary&quot;</span>)
+    <span class="hljs-keyword">assert</span> ids1 == ids2 <span class="hljs-keyword">and</span> ids1 == ids3
+    logger.info(ids1)
+</code></pre>
+<p>&#x652F;&#x6301;&#x7684;&#x884C;&#x4E1A;&#x83B7;&#x53D6;&#x5982;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x4E86;&#x89E3;&#x5168;&#x7403;&#x884C;&#x4E1A;&#x5212;&#x5206;&#x6807;&#x51C6;&#x53C2;&#x8003;<a href="https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard" target="_blank">&#x5168;&#x7403;&#x884C;&#x4E1A;&#x6807;&#x51C6;&#x5206;&#x7C7B;</a>:</p>
+<table>
+<thead>
+<tr>
+<th>&#x677F;&#x5757;&#x4EE3;&#x7801;</th>
+<th>&#x4E2D;&#x6587;&#x677F;&#x5757;&#x540D;&#x79F0;</th>
+<th>&#x82F1;&#x6587;&#x677F;&#x5757;&#x540D;&#x79F0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Energy</td>
+<td>&#x80FD;&#x6E90;</td>
+<td>energy</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>&#x539F;&#x6750;&#x6599;</td>
+<td>materials</td>
+</tr>
+<tr>
+<td>ConsumerDiscretionary</td>
+<td>&#x975E;&#x5FC5;&#x9700;&#x6D88;&#x8D39;&#x54C1;</td>
+<td>consumer discretionary</td>
+</tr>
+<tr>
+<td>ConsumerStaples</td>
+<td>&#x5FC5;&#x9700;&#x6D88;&#x8D39;&#x54C1;</td>
+<td>consumer staples</td>
+</tr>
+<tr>
+<td>HealthCare</td>
+<td>&#x533B;&#x7597;&#x4FDD;&#x5065;</td>
+<td>health care</td>
+</tr>
+<tr>
+<td>Financials</td>
+<td>&#x91D1;&#x878D;</td>
+<td>financials</td>
+</tr>
+<tr>
+<td>InformationTechnology</td>
+<td>&#x4FE1;&#x606F;&#x6280;&#x672F;</td>
+<td>information technology</td>
+</tr>
+<tr>
+<td>TelecommunicationServices</td>
+<td>&#x7535;&#x4FE1;&#x670D;&#x52A1;</td>
+<td>telecommunication services</td>
+</tr>
+<tr>
+<td>Utilities</td>
+<td>&#x516C;&#x5171;&#x670D;&#x52A1;</td>
+<td>utilities</td>
+</tr>
+<tr>
+<td>Industrials</td>
+<td>&#x5DE5;&#x4E1A;</td>
+<td>industrials</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-&#x83B7;&#x53D6;&#x6982;&#x5FF5;">2.4 &#x83B7;&#x53D6;&#x6982;&#x5FF5;</h3>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://www.ricequant.com/api/python/chn#data-methods-concept" target="_blank">https://www.ricequant.com/api/python/chn#data-methods-concept</a></p>
+<h3 id="25-&#x83B7;&#x53D6;&#x6307;&#x6570;&#x6210;&#x5206;&#x80A1;">2.5 &#x83B7;&#x53D6;&#x6307;&#x6570;&#x6210;&#x5206;&#x80A1;</h3>
+<h4 id="indexcomponents--&#x6307;&#x6570;&#x6210;&#x5206;&#x80A1;">index_components - &#x6307;&#x6570;&#x6210;&#x5206;&#x80A1;</h4>
+<pre><code>index_components(order_book_id, date=None)
+</code></pre><p>&#x83B7;&#x53D6;&#x67D0;&#x4E00;&#x6307;&#x6570;&#x7684;&#x80A1;&#x7968;&#x6784;&#x6210;&#x5217;&#x8868;&#xFF0C;&#x4E5F;&#x652F;&#x6301;&#x6307;&#x6570;&#x7684;&#x5386;&#x53F2;&#x6784;&#x6210;&#x67E5;&#x8BE2;&#x3002;</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>order_book_id</td>
+<td><em>str</em></td>
+<td>&#x6307;&#x6570;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4F20;&#x5165;order_book_id</td>
+</tr>
+<tr>
+<td>date</td>
+<td><em>str</em>, <em>date</em>, <em>datetime</em>, <em>pandas Timestamp</em></td>
+<td>&#x67E5;&#x8BE2;&#x65E5;&#x671F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7B56;&#x7565;&#x5F53;&#x524D;&#x65E5;&#x671F;&#x3002;&#x5982;&#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x5E94;&#x4FDD;&#x8BC1;&#x8BE5;&#x65E5;&#x671F;&#x4E0D;&#x665A;&#x4E8E;&#x7B56;&#x7565;&#x5F53;&#x524D;&#x65E5;&#x671F;</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<h5 id="&#x8FD4;&#x56DE;">&#x8FD4;&#x56DE;</h5>
+<p>&#x6784;&#x6210;&#x8BE5;&#x6307;&#x6570;&#x80A1;&#x7968;&#x7684;order_book_id list</p>
+<h4 id="&#x5E38;&#x89C1;&#x7684;&#x6307;&#x6570;&#x83B7;&#x53D6;&#x4EE3;&#x7801;&#x4E3A;">&#x5E38;&#x89C1;&#x7684;&#x6307;&#x6570;&#x83B7;&#x53D6;&#x4EE3;&#x7801;&#x4E3A;</h4>
+<p><img src="../images/&#x5168;&#x90E8;&#x6307;&#x6570;.png" alt="&#x5168;&#x90E8;&#x6307;&#x6570;"></p>
+<h3 id="26-&#x81EA;&#x5B9A;&#x4E49;&#x80A1;&#x7968;&#x6C60;&#xFF0C;&#x63D0;&#x4F9B;&#x7ED9;handlebar&#x4F7F;&#x7528;">2.6 &#x81EA;&#x5B9A;&#x4E49;&#x80A1;&#x7968;&#x6C60;&#xFF0C;&#x63D0;&#x4F9B;&#x7ED9;handle_bar&#x4F7F;&#x7528;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<strong>context&#x7684;&#x53C2;&#x6570;</strong>&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x6765;&#x83B7;&#x53D6;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">init</span><span class="hljs-params">(context)</span>:</span>
+    <span class="hljs-comment"># &#x5728;context&#x4E2D;&#x4FDD;&#x5B58;&#x5168;&#x5C40;&#x53D8;&#x91CF;</span>
+    context.s1 = <span class="hljs-string">&quot;000001.XSHE&quot;</span>
+
+    <span class="hljs-comment"># context.s2 = &quot;601390.XSHG&quot;</span>
+    <span class="hljs-comment"># &#x83B7;&#x53D6;&#x884C;&#x4E1A;</span>
+    <span class="hljs-comment"># context.stock_list = industry(&quot;C39&quot;)</span>
+    <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6307;&#x6570;&#x6210;&#x5206;&#x80A1;</span>
+    context.hs300 = index_components(<span class="hljs-string">&quot;000300.XSHG&quot;</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">before_trading</span><span class="hljs-params">(context)</span>:</span>
+    logger.info(context.hs300)
+    logger.info(<span class="hljs-string">&quot;before_trading&quot;</span>)
+</code></pre>
+<h2 id="3&#x3001;&#x83B7;&#x53D6;&#x80A1;&#x7968;&#x5408;&#x7EA6;&#x6570;&#x636E;">3&#x3001;&#x83B7;&#x53D6;&#x80A1;&#x7968;&#x5408;&#x7EA6;&#x6570;&#x636E;</h2>
+<h3 id="31-historybars--&#x67D0;&#x4E00;&#x5408;&#x7EA6;&#x5386;&#x53F2;&#x6570;&#x636E;">3.1 history_bars - &#x67D0;&#x4E00;&#x5408;&#x7EA6;&#x5386;&#x53F2;&#x6570;&#x636E;</h3>
+<pre><code>history_bars(order_book_id, bar_count, frequency, fields=None, skip_suspended=True, include_now=False)
+</code></pre><p>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5408;&#x7EA6;&#x7684;&#x5386;&#x53F2;&#x884C;&#x60C5;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;<strong>&#x65E5;&#x4EE5;&#x53CA;&#x5206;&#x949F;</strong>&#x5386;&#x53F2;&#x6570;&#x636E;&#x3002;<strong>&#x4E0D;&#x80FD;&#x5728;init&#x4E2D;&#x8C03;&#x7528;&#x3002;</strong></p>
+<h5 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>order_book_id</td>
+<td><em>str</em></td>
+<td>&#x5408;&#x7EA6;&#x4EE3;&#x7801;&#xFF0C;&#x5FC5;&#x586B;&#x9879;</td>
+</tr>
+<tr>
+<td>bar_count</td>
+<td><em>int</em></td>
+<td>&#x83B7;&#x53D6;&#x7684;&#x5386;&#x53F2;&#x6570;&#x636E;&#x6570;&#x91CF;&#xFF0C;&#x5FC5;&#x586B;&#x9879;</td>
+</tr>
+<tr>
+<td>frequency</td>
+<td><em>str</em></td>
+<td>&#x83B7;&#x53D6;&#x6570;&#x636E;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x9891;&#x7387;&#x8FDB;&#x884C;&#x3002;&apos;1d&apos;&#x6216;&apos;1m&apos;&#x5206;&#x522B;&#x8868;&#x793A;&#x6BCF;&#x65E5;&#x548C;&#x6BCF;&#x5206;&#x949F;&#xFF0C;&#x5FC5;&#x586B;&#x9879;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x949F;&#x9891;&#x7387;&#xFF0C;&#x4F8B;&#x5982;&apos;5m&apos;&#x4EE3;&#x8868;5&#x5206;&#x949F;&#x7EBF;</td>
+</tr>
+<tr>
+<td>fields</td>
+<td><em>str</em>OR <em>str list</em></td>
+<td>&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x5B57;&#x6BB5;&#x3002;&#x5FC5;&#x586B;&#x9879;&#x3002;&#x89C1;&#x4E0B;&#x65B9;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>skip_suspended</td>
+<td><em>bool</em></td>
+<td>&#x662F;&#x5426;&#x8DF3;&#x8FC7;&#x505C;&#x724C;&#xFF0C;&#x9ED8;&#x8BA4;True&#xFF0C;&#x8DF3;&#x8FC7;&#x505C;&#x724C;</td>
+</tr>
+<tr>
+<td>include_now</td>
+<td><em>bool</em></td>
+<td>&#x662F;&#x5426;&#x5305;&#x62EC;&#x4E0D;&#x5B8C;&#x6574;&#x7684;bar&#x6570;&#x636E;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;False&#xFF0C;&#x4E0D;&#x5305;&#x62EC;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x5728;09:39&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x4E0A;&#x4E00;&#x4E2A;5&#x5206;&#x949F;&#x7EBF;&#xFF0C;&#x9ED8;&#x8BA4;&#x5C06;&#x83B7;&#x53D6;&#x5230;09:31~09:35&#x5408;&#x6210;&#x7684;5&#x5206;&#x949F;&#x7EBF;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;True&#xFF0C;&#x5219;&#x5C06;&#x83B7;&#x53D6;&#x5230;09:36~09:39&#x4E4B;&#x95F4;&#x5408;&#x6210;&#x7684;&quot;&#x4E0D;&#x5B8C;&#x6574;&quot;5&#x5206;&#x949F;&#x7EBF;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x8FD4;&#x56DE;">&#x8FD4;&#x56DE;</h5>
+<p><em>ndarray</em> &#xFF0C;&#x65B9;&#x4FBF;&#x76F4;&#x63A5;&#x4E0E;talib&#x7B49;&#x8BA1;&#x7B97;&#x5E93;&#x5BF9;&#x63A5;&#xFF0C;&#x6548;&#x7387;&#x8F83;history&#x8FD4;&#x56DE;&#x7684;DataFrame&#x66F4;&#x9AD8;&#x3002;</p>
+<h4 id="&#x83B7;&#x53D6;&#x7684;&#x5B57;&#x6BB5;&#x5185;&#x5BB9;&#x5982;&#x4E0B;">&#x83B7;&#x53D6;&#x7684;&#x5B57;&#x6BB5;&#x5185;&#x5BB9;&#x5982;&#x4E0B;</h4>
+<table>
+<thead>
+<tr>
+<th>fields</th>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>datetime</td>
+<td>&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td>open</td>
+<td>&#x5F00;&#x76D8;&#x4EF7;</td>
+</tr>
+<tr>
+<td>high</td>
+<td>&#x6700;&#x9AD8;&#x4EF7;</td>
+</tr>
+<tr>
+<td>low</td>
+<td>&#x6700;&#x4F4E;&#x4EF7;</td>
+</tr>
+<tr>
+<td>close</td>
+<td>&#x6536;&#x76D8;&#x4EF7;</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>&#x6210;&#x4EA4;&#x91CF;</td>
+</tr>
+<tr>
+<td>total_turnover</td>
+<td>&#x6210;&#x4EA4;&#x989D;</td>
+</tr>
+<tr>
+<td>datetime</td>
+<td>int&#x7C7B;&#x578B;&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td>open_interest</td>
+<td>&#x6301;&#x4ED3;&#x91CF;&#xFF08;&#x671F;&#x8D27;&#x4E13;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td>basis_spread</td>
+<td>&#x671F;&#x73B0;&#x5DEE;&#xFF08;&#x80A1;&#x6307;&#x671F;&#x8D27;&#x4E13;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td>settlement</td>
+<td>&#x7ED3;&#x7B97;&#x4EF7;&#xFF08;&#x671F;&#x8D27;&#x65E5;&#x7EBF;&#x4E13;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td>prev_settlement</td>
+<td>&#x7ED3;&#x7B97;&#x4EF7;&#xFF08;&#x671F;&#x8D27;&#x65E5;&#x7EBF;&#x4E13;&#x7528;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-&#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;">3.2 &#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;</h3>
+<ul>
+<li>&#x56E0;&#x4E3A;&#x64AE;&#x5408;&#x903B;&#x8F91;&#x662F;&#x5F53;&#x524D;bar&#x6536;&#x76D8;&#x6216;&#x8005;&#x4E0B;&#x4E00;&#x4E2A;bar&#x5F00;&#x76D8;&#xFF0C;&#x6240;&#x4EE5;history_bars()&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x5305;&#x542B;&#x5F53;&#x524D;bar&#x53CA;&#x4E4B;&#x524D;&#x6240;&#x6709;&#x7684;bar&#x6570;&#x636E;<ul>
+<li>&#x83B7;&#x53D6;&#x5F53;&#x5929;&#x7684;&#x6570;&#x636E;</li>
+<li>&#x83B7;&#x53D6;&#x524D;&#x5341;&#x5929;&#x7684;&#x6570;&#x636E;</li>
+<li>&#x83B7;&#x53D6;&#x6BCF;&#x5929;&#x7684;&#x6BCF;&#x5206;&#x949F;&#x5206;&#x949F;&#x7684;&#x6570;&#x636E;?&#x83B7;&#x53D6;&#x6BCF;&#x5206;&#x949F;&#x4E4B;&#x524D;&#x7684;&#x51E0;&#x5206;&#x949F;&#x6570;&#x636E;&#xFF1F;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5982;&#x679C;&#x60F3;&#x5728;&#x4ECA;&#x5929;&#x8FD0;&#x884C;&#xFF0C;&#x83B7;&#x53D6;&#x4ECE;&#x51E0;&#x5929;&#x5F00;&#x59CB;&#x524D;&#x51E0;&#x5929;&#x4E00;&#x4E9B;&#x6570;&#x636E;</span>
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x524D;5&#x5929;&#x7684;&#x6536;&#x76D8;&#x4EF7;&#xFF0C;&#x5F00;&#x76D8;&#x4EF7;</span>
+<span class="hljs-comment"># &#x80A1;&#x7968;&#x4EE3;&#x53F7;&#xFF0C;&#x95F4;&#x9694;&#xFF0C;&#x9891;&#x7387;&#xFF0C;&#x4EA4;&#x6613;&#x6307;&#x6807;</span>
+data = history_bars(context.s1, <span class="hljs-number">5</span>, <span class="hljs-string">&apos;1d&apos;</span>, <span class="hljs-string">&apos;close&apos;</span>)
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x6307;&#x6807;</span>
+data = history_bars(context.s1, <span class="hljs-number">5</span>, <span class="hljs-string">&apos;1d&apos;</span>, [<span class="hljs-string">&apos;close&apos;</span>, <span class="hljs-string">&apos;open&apos;</span>])
+
+<span class="hljs-comment"># &#x5982;&#x679C;&#x56DE;&#x6D4B;&#x662F;&#x6BCF;&#x65E5;&#x7684;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x83B7;&#x53D6;&#x5206;&#x949F;&#x6570;&#x636E;</span>
+data = history_bars(context.s1, <span class="hljs-number">5</span>, <span class="hljs-string">&apos;1m&apos;</span>, [<span class="hljs-string">&apos;close&apos;</span>, <span class="hljs-string">&apos;open&apos;</span>])
+</code></pre>
+<p><strong>&#x95EE;&#x9898;&#xFF1A;&#x8FD9;&#x91CC;&#x7684;&#x9891;&#x7387;&#x8DDF;&#x56DE;&#x6D4B;&#x7684;&#x9891;&#x7387;&#x533A;&#x522B;&#xFF1F;</strong> </p>
+<p><img src="../images/&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x884C;&#x60C5;&#x9519;&#x8BEF;.png" alt="&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x884C;&#x60C5;&#x9519;&#x8BEF;"></p>
+<h3 id="33-&#x5176;&#x5B83;&#x901A;&#x8FC7;bardict&#x83B7;&#x53D6;">3.3 &#x5176;&#x5B83;-&#x901A;&#x8FC7;bar_dict&#x83B7;&#x53D6;</h3>
+<p>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x5F53;&#x524D;&#x4EF7;&#x683C;&#x7684;bar_dict&#xFF0C;</p>
+<h4 id="bar&#x5BF9;&#x8C61;">Bar&#x5BF9;&#x8C61;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>order_book_id</td>
+<td><em>str</em></td>
+<td>&#x5408;&#x7EA6;&#x4EE3;&#x7801;</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td><em>str</em></td>
+<td>&#x5408;&#x7EA6;&#x7B80;&#x79F0;</td>
+</tr>
+<tr>
+<td>datetime</td>
+<td><em>datetime.datetime</em></td>
+<td>&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td>open</td>
+<td><em>float</em></td>
+<td>&#x5F00;&#x76D8;&#x4EF7;</td>
+</tr>
+<tr>
+<td>close</td>
+<td><em>float</em></td>
+<td>&#x6536;&#x76D8;&#x4EF7;</td>
+</tr>
+<tr>
+<td>high</td>
+<td><em>float</em></td>
+<td>&#x6700;&#x9AD8;&#x4EF7;</td>
+</tr>
+<tr>
+<td>low</td>
+<td><em>float</em></td>
+<td>&#x6700;&#x4F4E;&#x4EF7;</td>
+</tr>
+<tr>
+<td>volume</td>
+<td><em>float</em></td>
+<td>&#x6210;&#x4EA4;&#x91CF;</td>
+</tr>
+<tr>
+<td>total_turnover</td>
+<td><em>float</em></td>
+<td>&#x6210;&#x4EA4;&#x989D;</td>
+</tr>
+<tr>
+<td>prev_close</td>
+<td><em>float</em></td>
+<td>&#x6628;&#x65E5;&#x6536;&#x76D8;&#x4EF7;</td>
+</tr>
+<tr>
+<td>limit_up</td>
+<td><em>float</em></td>
+<td>&#x6DA8;&#x505C;&#x4EF7;</td>
+</tr>
+<tr>
+<td>limit_down</td>
+<td><em>float</em></td>
+<td>&#x8DCC;&#x505C;&#x4EF7;</td>
+</tr>
+<tr>
+<td>isnan</td>
+<td><em>bool</em></td>
+<td>&#x5F53;&#x524D;bar&#x6570;&#x636E;&#x662F;&#x5426;&#x6709;&#x884C;&#x60C5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x83B7;&#x53D6;&#x5DF2;&#x7ECF;&#x5230;&#x671F;&#x7684;&#x5408;&#x7EA6;&#x6570;&#x636E;&#xFF0C;isnan&#x6B64;&#x65F6;&#x4E3A;True</td>
+</tr>
+<tr>
+<td>suspended</td>
+<td><em>bool</em></td>
+<td>&#x662F;&#x5426;&#x5168;&#x5929;&#x505C;&#x724C;</td>
+</tr>
+<tr>
+<td>prev_settlement</td>
+<td><em>float</em></td>
+<td>&#x6628;&#x7ED3;&#x7B97;&#xFF08;&#x671F;&#x8D27;&#x65E5;&#x7EBF;&#x6570;&#x636E;&#x4E13;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td>settlement</td>
+<td><em>float</em></td>
+<td>&#x7ED3;&#x7B97;&#xFF08;&#x671F;&#x8D27;&#x65E5;&#x7EBF;&#x6570;&#x636E;&#x4E13;&#x7528;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x6CE8;&#x610F;,&#x5728;&#x80A1;&#x7968;&#x7B56;&#x7565;&#x4E2D;bar&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x6240;&#x6709;&#x80A1;&#x7968;&#x5408;&#x7EA6;&#x7684;bar&#x4FE1;&#x606F;</strong></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x53EA;&#x80FD;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x4EA4;&#x6613;&#x4FE1;&#x606F;</span>
+logger.info(bar_dict[context.s1].close)
+</code></pre>
+<p><strong>&#x6CE8;&#xFF1A;&#x53EA;&#x80FD;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x65E5;&#x671F;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x83B7;&#x53D6;&#x4E4B;&#x524D;&#x65E5;&#x671F;</strong></p>
+<h2 id="4&#x3001;&#x83B7;&#x53D6;&#x8D22;&#x52A1;&#x6570;&#x636E;">4&#x3001;&#x83B7;&#x53D6;&#x8D22;&#x52A1;&#x6570;&#x636E;</h2>
+<h3 id="41-getfundamentals--&#x67E5;&#x8BE2;&#x8D22;&#x52A1;&#x6570;&#x636E;">4.1 get_fundamentals - &#x67E5;&#x8BE2;&#x8D22;&#x52A1;&#x6570;&#x636E;</h3>
+<pre><code>get_fundamentals(query, entry_date=None, interval=&apos;1d&apos;, report_quarter=False)
+</code></pre><p>&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x8D22;&#x52A1;&#x6570;&#x636E;&#x8868;&#x683C;&#x3002;&#x76EE;&#x524D;&#x652F;&#x6301;&#x4E2D;&#x56FD;&#x5E02;&#x573A;&#x8D85;&#x8FC7;400&#x4E2A;&#x6307;&#x6807;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x8003;<a href="https://www.ricequant.com/data/fundamentals" target="_blank"> &#x8D22;&#x52A1;&#x6570;&#x636E;&#x6587;&#x6863; </a>&#x3002;&#x76EE;&#x524D;&#x4EC5;&#x652F;&#x6301;&#x4E2D;&#x56FD;&#x5E02;&#x573A;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x4E00;&#x6B21;&#x67E5;&#x8BE2;&#x8FC7;&#x591A;&#x80A1;&#x7968;&#x7684;&#x8D22;&#x52A1;&#x6570;&#x636E;&#x4F1A;&#x5BFC;&#x81F4;&#x7CFB;&#x7EDF;&#x8FD0;&#x884C;&#x7F13;&#x6162;&#x3002;&#xFF08;entry_date&#x5728;&#x56DE;&#x6D4B;&#x5F53;&#x4E2D;&#x4E0D;&#x53BB;&#x8981;&#x63D0;&#x4F9B;&#xFF09;</p>
+<p><strong>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684;&#x6570;&#x636E;&#x6307;&#x6807;&#x7C7B;&#x522B;&#x867D;&#x7136;&#x6709;400&#x591A;&#x79CD;&#xFF0C;&#x4F46;&#x662F;RQ&#x5E73;&#x53F0;&#x7684;&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x6570;&#x636E;&#x8D28;&#x91CF;&#x4E0D;&#x9AD8;&#xFF0C;&#x5F88;&#x591A;&#x6307;&#x6807;&#x6CA1;&#x6709;&#x7ECF;&#x8FC7;&#x8FD0;&#x7B97;&#x5904;&#x7406;&#x6210;&#x9700;&#x8981;&#x7684;&#x6307;&#x6807;&#xFF0C;&#x8DDF;&#x6211;&#x4EEC;&#x5728;&#x8BB2;&#x91D1;&#x878D;&#x6570;&#x636E;&#x5904;&#x7406;&#x7684;&#x65F6;&#x5019;&#x5217;&#x51FA;&#x6765;&#x7684;&#x90A3;&#x4E9B;&#x8D22;&#x52A1;&#x6307;&#x6807;&#x5DEE;&#x522B;&#x6BD4;&#x8F83;&#x5927;</strong></p>
+<p><img src="../images/&#x8D22;&#x52A1;&#x6307;&#x6807;.png" alt="&#x8D22;&#x52A1;&#x6307;&#x6807;"></p>
+<h5 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>query</td>
+<td><em>SQLAlchemyQueryObject</em></td>
+<td>SQLAlchmey&#x7684;Query&#x5BF9;&#x8C61;&#x3002;&#x5176;&#x4E2D;&#x53EF;&#x5728;&apos;query&apos;&#x5185;&#x586B;&#x5199;&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x6307;&#x6807;&#xFF0C;&apos;filter&apos;&#x5185;&#x586B;&#x5199;&#x6570;&#x636E;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x3002;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003; <a href="http://docs.sqlalchemy.org/en/rel_1_0/orm/tutorial.html#querying" target="_blank">sqlalchemy&apos;s query documentation </a>&#x5B66;&#x4E60;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684;&#x65B9;&#x4FBF;&#x7684;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x3002;&#x4ECE;&#x6570;&#x636E;&#x79D1;&#x5B66;&#x5BB6;&#x7684;&#x89C2;&#x70B9;&#x6765;&#x770B;&#xFF0C;sqlalchemy&#x7684;&#x4F7F;&#x7528;&#x6BD4;sql&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x548C;&#x5F3A;&#x5927;</td>
+</tr>
+<tr>
+<td>entry_date</td>
+<td><em>str</em>, <em>datetime.date</em>, <em>datetime.datetime</em>, <em>pandasTimestamp</em></td>
+<td>&#x67E5;&#x8BE2;&#x8D22;&#x52A1;&#x6570;&#x636E;&#x7684;&#x57FA;&#x51C6;&#x65E5;&#x671F;&#xFF0C;&#x5E94;&#x65E9;&#x4E8E;&#x7B56;&#x7565;&#x5F53;&#x524D;&#x65E5;&#x671F;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x7B56;&#x7565;&#x5F53;&#x524D;&#x65E5;&#x671F;&#x524D;&#x4E00;&#x5929;&#x3002;</td>
+</tr>
+<tr>
+<td>interval</td>
+<td><em>str</em></td>
+<td>&#x67E5;&#x8BE2;&#x8D22;&#x52A1;&#x6570;&#x636E;&#x7684;&#x95F4;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&apos;1d&apos;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x586B;&#x5199;&apos;5y&apos;&#xFF0C;&#x5219;&#x4EE3;&#x8868;&#x4ECE;entry_date&#x5F00;&#x59CB;&#xFF08;&#x5305;&#x62EC;entry_date&#xFF09;&#x56DE;&#x6EAF;5&#x5E74;&#xFF0C;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x65F6;&#x95F4;&#x4EE5;<strong>&#x5E74;</strong>&#x4E3A;&#x95F4;&#x9694;&#x3002;&apos;d&apos; - &#x5929;&#xFF0C;&apos;m&apos; - &#x6708;&#xFF0C; &apos;q&apos; - &#x5B63;&#xFF0C;&apos;y&apos; - &#x5E74;</td>
+</tr>
+<tr>
+<td>report_quarter</td>
+<td><em>bool</em></td>
+<td>&#x662F;&#x5426;&#x663E;&#x793A;&#x62A5;&#x544A;&#x671F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#xFF0C;&#x4E0D;&#x663E;&#x793A;&#x3002;&apos;Q1&apos; - &#x4E00;&#x5B63;&#x62A5;&#xFF0C;&apos;Q2&apos; - &#x534A;&#x5E74;&#x62A5;&#xFF0C;&apos;Q3&apos; - &#x4E09;&#x5B63;&#x62A5;&#xFF0C;&apos;Q4&apos; - &#x5E74;&#x62A5;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x8FD4;&#x56DE;">&#x8FD4;&#x56DE;</h5>
+<p><em>pandas DataPanel</em> &#x5982;&#x679C;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD4;&#x56DE;&#x7A7A;<em>pandas DataFrame</em> &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x95F4;&#x9694;&#x4E3A;1d, 1m, 1q, 1y&#xFF0C;&#x8FD4;&#x56DE;<em>pandas DataFrame</em></p>
+<h3 id="42-&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x6307;&#x6807;query&#x67E5;&#x8BE2;">4.2 &#x5982;&#x4F55;&#x83B7;&#x53D6;&#x6307;&#x6807;-query&#x67E5;&#x8BE2;</h3>
+<p><img src="../images/&#x8D22;&#x52A1;&#x6307;&#x6807;&#x5C5E;&#x6027;.png" alt="&#x8D22;&#x52A1;&#x6307;&#x6807;&#x5C5E;&#x6027;"></p>
+<p><strong>&#x901A;&#x8FC7;fundamentals&#x83B7;&#x53D6;&#x4EE5;&#x4E0A;&#x7684;&#x5C5E;&#x6027;</strong></p>
+<pre><code class="lang-python">q = query(fundamentals.eod_derivative_indicator.pe_ratio)
+</code></pre>
+<h3 id="43--&#x8FC7;&#x6EE4;&#x6307;&#x6807;&#x6761;&#x4EF6;">4.3  &#x8FC7;&#x6EE4;&#x6307;&#x6807;&#x6761;&#x4EF6;</h3>
+<ul>
+<li>query().filter&#xFF1A;&#x8FC7;&#x6EE4;&#x5927;&#x5C0F;</li>
+<li>query().order_by&#xFF1A;&#x6392;&#x5E8F;</li>
+<li>query().limit()&#xFF1A;&#x9650;&#x5236;&#x6570;&#x91CF;</li>
+<li>fundamentals.stockcode.in_()&#xFF1A;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x80A1;&#x7968;&#x6C60;&#x5F53;&#x4E2D;&#x8FC7;&#x6EE4;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x589E;&#x52A0;&#x6761;&#x4EF6;&#x8FC7;&#x6EE4;&#x6389;&#x4E0D;&#x7B26;&#x5408;&#x7684;&#x80A1;&#x7968;&#x4EE3;&#x7801;</span>
+<span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x76F4;&#x63A5;&#x83B7;&#x53D6;A&#x80A1;&#x662F;&#x6240;&#x6709;&#x7684;&#x80A1;&#x7968;&#x8FD9;&#x4E2A;&#x6307;&#x6807;&#x6570;&#x636E;</span>
+<span class="hljs-comment"># order_by&#x9ED8;&#x8BA4;&#x662F;&#x5347;&#x5E8F;</span>
+<span class="hljs-comment"># limit:&#x9009;&#x62E9;&#x56FA;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x80A1;&#x7968;&#xFF0C;&#x83B7;&#x53D6;20&#x4E2A;&#x80A1;&#x7968;&#x4EA4;&#x6613;</span>
+q = query(fundamentals.eod_derivative_indicator.pe_ratio,
+             fundamentals.eod_derivative_indicator.pcf_ratio).filter(
+                 fundamentals.eod_derivative_indicator.pe_ratio &gt; <span class="hljs-number">20</span>,
+                 fundamentals.eod_derivative_indicator.pcf_ratio &gt; <span class="hljs-number">15</span>,
+                 ).order_by(
+                     fundamentals.eod_derivative_indicator.pe_ratio
+                     ).limit(<span class="hljs-number">20</span>)
+
+<span class="hljs-comment"># &#x60F3;&#x8981;&#x4ECE;&#x6CAA;&#x6DF1;300&#x6307;&#x6570;&#x7684;&#x4E00;&#x4E9B;&#x80A1;&#x7968;&#x53BB;&#x8FDB;&#x884C;&#x7B5B;&#x9009;</span>
+<span class="hljs-comment"># &#x901A;&#x8FC7;fundamentals.stockcode&#x53BB;&#x9650;&#x5B9A;&#x80A1;&#x7968;&#x6C60;</span>
+    q = query(fundamentals.eod_derivative_indicator.pe_ratio,
+             fundamentals.eod_derivative_indicator.pcf_ratio).filter(
+                 fundamentals.eod_derivative_indicator.pe_ratio &gt; <span class="hljs-number">20</span>,
+                 ).order_by(
+                     fundamentals.eod_derivative_indicator.pe_ratio
+                     ).filter(
+                         fundamentals.stockcode.in_(context.hs300)
+                         ).limit(<span class="hljs-number">20</span>)
+
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x8D22;&#x52A1;&#x6570;&#x636E;&#xFF0C;&#x9ED8;&#x8BA4;&#x83B7;&#x53D6;&#x7684;&#x662F;dataframe&#xFF0C;entry_date&#x5728;&#x56DE;&#x6D4B;&#x5F53;&#x4E2D;&#x4E0D;&#x53BB;&#x8981;&#x63D0;&#x4F9B;</span>
+fund = get_fundamentals(q)
+<span class="hljs-comment"># &#x6CE8;&#x91CA;&#xFF1A;&#x6BCF;&#x4E2A;&#x8868;&#x90FD;&#x6709;&#x4E00;&#x4E2A;stockcode&#x5728;&#x7528;&#x6765;&#x65B9;&#x4FBF;&#x901A;&#x8FC7;&#x80A1;&#x7968;&#x4EE3;&#x7801;&#x6765;&#x8FC7;&#x6EE4;&#x6389;&#x67E5;&#x8BE2;&#x7684;&#x6570;&#x636E;</span>
+</code></pre>
+<h3 id="&#x95EE;&#x9898;&#xFF1A;&#x4E00;&#x822C;&#x9009;&#x62E9;&#x4E00;&#x4E9B;&#x6EE1;&#x8DB3;&#x8D22;&#x52A1;&#x6570;&#x636E;&#x7684;&#x80A1;&#x7968;&#x65F6;&#x95F4;&#x5E76;&#x4E0D;&#x662F;&#x6BCF;&#x5929;&#x53BB;&#x83B7;&#x53D6;&#xFF0C;&#x800C;&#x662F;&#x95F4;&#x9694;&#x4E00;&#x5468;&#x3001;&#x4E00;&#x4E2A;&#x6708;&#x53BB;&#x83B7;&#x53D6;&#x4E00;&#x6B21;&#xFF1F;&#x600E;&#x4E48;&#x53D6;&#x83B7;&#x53D6;&#x5462;&#xFF1F;">&#x95EE;&#x9898;&#xFF1A;&#x4E00;&#x822C;&#x9009;&#x62E9;&#x4E00;&#x4E9B;&#x6EE1;&#x8DB3;&#x8D22;&#x52A1;&#x6570;&#x636E;&#x7684;&#x80A1;&#x7968;&#x65F6;&#x95F4;&#x5E76;&#x4E0D;&#x662F;&#x6BCF;&#x5929;&#x53BB;&#x83B7;&#x53D6;&#xFF0C;&#x800C;&#x662F;&#x95F4;&#x9694;&#x4E00;&#x5468;&#x3001;&#x4E00;&#x4E2A;&#x6708;&#x53BB;&#x83B7;&#x53D6;&#x4E00;&#x6B21;&#xFF1F;&#x600E;&#x4E48;&#x53D6;&#x83B7;&#x53D6;&#x5462;&#xFF1F;</h3>
+<h3 id="4&#x3001;scheduler&#x5B9A;&#x65F6;&#x5668;&#x5B9A;&#x65F6;&#x6570;&#x636E;&#x83B7;&#x53D6;">4&#x3001;scheduler&#x5B9A;&#x65F6;&#x5668;&#x5B9A;&#x65F6;&#x6570;&#x636E;&#x83B7;&#x53D6;</h3>
+<ul>
+<li>scheduler.run_daily - &#x6BCF;&#x5929;&#x8FD0;&#x884C;</li>
+<li>scheduler.run_weekly - &#x6BCF;&#x5468;&#x8FD0;&#x884C;</li>
+<li>scheduler.run_monthly - &#x6BCF;&#x6708;&#x8FD0;&#x884C;</li>
+</ul>
+<h3 id="41-api&#x4ECB;&#x7ECD;">4.1 API&#x4ECB;&#x7ECD;</h3>
+<h4 id="411-schedulerrundaily--&#x6BCF;&#x5929;&#x8FD0;&#x884C;">4.1.1 scheduler.run_daily - &#x6BCF;&#x5929;&#x8FD0;&#x884C;</h4>
+<pre><code>scheduler.run_daily(function)
+</code></pre><p>&#x6BCF;&#x65E5;&#x8FD0;&#x884C;&#x4E00;&#x6B21;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#xFF0C;<strong>&#x53EA;&#x80FD;&#x5728;init&#x5185;&#x4F7F;&#x7528;</strong>&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF0C;schedule&#x4E00;&#x5B9A;&#x5728;&#x5176;&#x5BF9;&#x5E94;&#x65F6;&#x95F4;&#x70B9;&#x7684;handle_bar&#x4E4B;&#x524D;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x5B9A;&#x65F6;&#x8FD0;&#x884C;&#x51FD;&#x6570;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x8F83;&#x957F;&#xFF0C;&#x5219;&#x4E2D;&#x95F4;&#x7684;handle_bar&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x88AB;&#x7565;&#x8FC7;&#x3002;</p>
+<h5 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>function</td>
+<td>&#x4F7F;&#x4F20;&#x5165;&#x7684;<code>function</code>&#x6BCF;&#x65E5;&#x8FD0;&#x884C;&#x3002;<strong>&#x6CE8;&#x610F;</strong>&#xFF0C;<strong>function&#x51FD;&#x6570;&#x4E00;&#x5B9A;&#x8981;&#x5305;&#x542B;&#xFF08;&#x5E76;&#x4E14;&#x53EA;&#x80FD;&#x5305;&#x542B;&#xFF09;context, bar_dict&#x4E24;&#x4E2A;&#x8F93;&#x5165;&#x53C2;&#x6570;</strong></td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x8FD4;&#x56DE;">&#x8FD4;&#x56DE;</h5>
+<p>&#x65E0;</p>
+<h4 id="412-schedulerrunmonthly--&#x6BCF;&#x6708;&#x8FD0;&#x884C;">4.1.2 scheduler.run_monthly - &#x6BCF;&#x6708;&#x8FD0;&#x884C;</h4>
+<pre><code>scheduler.run_monthly(function,tradingday=t)
+</code></pre><p>&#x6BCF;&#x6708;&#x8FD0;&#x884C;&#x4E00;&#x6B21;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#xFF0C;<strong>&#x53EA;&#x80FD;&#x5728;init&#x5185;&#x4F7F;&#x7528;</strong>&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li><code>tradingday</code>&#x7684;&#x8D1F;&#x6570;&#x8868;&#x793A;&#x5012;&#x6570;&#x3002;</li>
+<li><code>tradingday</code>&#x8868;&#x793A;&#x4EA4;&#x6613;&#x65E5;&#xFF0C;&#x5982;&#x67D0;&#x6708;&#x53EA;&#x6709;&#x4E09;&#x4E2A;&#x4EA4;&#x6613;&#x65E5;&#xFF0C;&#x5219;&#x6B64;&#x6708;&#x7684;tradingday=3&#x4E0E;tradingday=-1&#x8868;&#x793A;&#x540C;&#x4E00;&#x3002;</li>
+</ul>
+<h5 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td><em>function</em></td>
+<td>&#x4F7F;&#x4F20;&#x5165;&#x7684;<code>function</code>&#x6BCF;&#x65E5;&#x4EA4;&#x6613;&#x5F00;&#x59CB;&#x524D;&#x8FD0;&#x884C;&#x3002;<strong>&#x6CE8;&#x610F;</strong>&#xFF0C;<strong>function&#x51FD;&#x6570;&#x4E00;&#x5B9A;&#x8981;&#x5305;&#x542B;&#xFF08;&#x5E76;&#x4E14;&#x53EA;&#x80FD;&#x5305;&#x542B;&#xFF09;context, bar_dict&#x4E24;&#x4E2A;&#x8F93;&#x5165;&#x53C2;&#x6570;</strong></td>
+</tr>
+<tr>
+<td>tradingday</td>
+<td><em>int</em></td>
+<td>&#x8303;&#x56F4;&#x4E3A;[-23,1], [1,23] &#xFF0C;&#x4F8B;&#x5982;&#xFF0C;1&#x4EE3;&#x8868;&#x6BCF;&#x6708;&#x7B2C;&#x4E00;&#x4E2A;&#x4EA4;&#x6613;&#x65E5;&#xFF0C;-1&#x4EE3;&#x8868;&#x6BCF;&#x6708;&#x5012;&#x6570;&#x7B2C;&#x4E00;&#x4E2A;&#x4EA4;&#x6613;&#x65E5;&#xFF0C;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x6307;&#x5B9A;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x8FD4;&#x56DE;">&#x8FD4;&#x56DE;</h5>
+<p>&#x65E0;</p>
+<h3 id="42-&#x6DFB;&#x52A0;&#x5B9A;&#x65F6;&#x5668;&#x4E4B;&#x540E;&#x7684;&#x7B56;&#x7565;&#x8FD0;&#x884C;&#x987A;&#x5E8F;">4.2 &#x6DFB;&#x52A0;&#x5B9A;&#x65F6;&#x5668;&#x4E4B;&#x540E;&#x7684;&#x7B56;&#x7565;&#x8FD0;&#x884C;&#x987A;&#x5E8F;</h3>
+<p>&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x4E86;&#x8FD9;&#x6837;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">init</span><span class="hljs-params">(context)</span>:</span>
+    <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6BCF;&#x5929;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;</span>
+    scheduler.run_daily(get_data)
+    <span class="hljs-comment"># &#x6BCF;&#x4E2A;&#x4E00;&#x4E2A;&#x6708;&#x53BB;&#x83B7;&#x53D6;&#x8D22;&#x52A1;&#x6570;&#x636E;&#xFF0C;&#x6BCF;&#x9694;&#x4E00;&#x5468;&#x53BB;&#x83B7;&#x53D6;&#x8D22;&#x52A1;&#x6570;&#x636E;</span>
+    scheduler.run_monthly(get_data, tradingday=<span class="hljs-number">1</span>)
+</code></pre>
+<p><img src="../images/&#x5B9A;&#x65F6;&#x5668;&#x6D41;&#x7A0B;.png" alt="&#x5B9A;&#x65F6;&#x5668;&#x6D41;&#x7A0B;"></p>
+<h3 id="43-&#x4EE3;&#x7801;">4.3 &#x4EE3;&#x7801;</h3>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_data</span><span class="hljs-params">(context, bar_dict)</span>:</span>
+    <span class="hljs-comment"># logger.info(&quot;-------&quot;)</span>
+    <span class="hljs-comment"># &#x8FDB;&#x884C;&#x6BCF;&#x6708;&#x7684;&#x7B2C;&#x4E00;&#x5929;&#x53BB;&#x8C03;&#x6574;&#x8981;&#x4E70;&#x5356;&#x7684;&#x80A1;&#x7968;</span>
+    q = query(fundamentals.eod_derivative_indicator.pe_ratio,
+             fundamentals.eod_derivative_indicator.pcf_ratio).filter(
+                 fundamentals.eod_derivative_indicator.pe_ratio &gt; <span class="hljs-number">20</span>,
+                 ).order_by(
+                     fundamentals.eod_derivative_indicator.pe_ratio
+                     ).filter(
+                         fundamentals.stockcode.in_(context.hs300)
+                         ).limit(<span class="hljs-number">20</span>)
+
+    <span class="hljs-comment"># &#x83B7;&#x53D6;&#x8D22;&#x52A1;&#x6570;&#x636E;</span>
+    data = get_fundamentals(q)
+
+    logger.info(<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x6708;&#x66F4;&#x65B0;&#x7684;&#x80A1;&#x7968;&#x6C60;&quot;</span>)
+    logger.info(data.T)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../day01/section2.html" class="navigation navigation-prev " aria-label="Previous page: 策略创建运行流程"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../day01/section4.html" class="navigation navigation-next " aria-label="Next page: 回测交易接口"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"katex":{},"expandable-chapters-small":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
