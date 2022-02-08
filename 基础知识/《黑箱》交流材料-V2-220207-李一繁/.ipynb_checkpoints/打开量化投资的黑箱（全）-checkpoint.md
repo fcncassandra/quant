@@ -1,8 +1,8 @@
-# 打开量化投资的黑箱（全）
+# 打开量化投资的黑箱（上）
 
 分享人：李一繁
 
-时间：2022年2月8日
+时间：2022年1月26日
 
 适用人群：不熟悉金融投资知识的数据科学从业者
 
@@ -596,7 +596,7 @@ $$
 
 代入到一个商业住宅的项目，第一年我要雇人去建这个写字楼，之后每年收租，那么第一期的现金流CF0是一个巨额负数，之后每期CF1、CF2都是正数，而折现率是我做其他事情的**机会成本**，比如如果我不做这个项目，我的钱也是可以产生价值的，我可以全部买收益率为2%无风险的国债，那么每年我都能收到国债的本息，这种过程也可以称为**货币的时间价值的体现**。由于每期我都可以投资国债，所以我每期都要用现金流除以对应期数的国债收益率。最终我将每期的现金流加和就形成了NPV，如果NPV大于0，那么这个项目是可以投资的，最起码不会比直接买国债赚的少。
 
-这种计算NPV的方法我们一般称为**折现现金流模型（Discounted Cash Flow，DCF）**，另外多提一句，为了计算投资一个项目的收益率情况，我们可以先将折现率设定为一个未知数R，让R不断变动，直到让NPV等于0，此时的R就能描述出投资这个项目的平均年化收益，我们也将这个R称为**内部收益率IRR**（Internal Rate of Return）
+这种计算NPV的方法我们一般称为**折现现金流模型（Discounted Cash Flow，DCF）**
 
 ![](./pics/NPV.png)
 
@@ -642,21 +642,13 @@ $$
 
 我们之前说了，高收益一般伴随着高风险，那么反过来，如果我寻求了高风险，你是否应该给我一定的风险补偿呢？这种比较方式在股票中比较少，但是也可能偶尔存在，但是在固定收益的债券中就太多了。比如同样是国债和一个高评级的公司债，国债的安全度肯定更高，那我为什么要买公司债呢？假如公司不还怎么办？所以为了进行这方面的信用风险补偿，就需要增加公司债的收益率，否则将少有人问津。
 
+
+
 ![](./pics/credit_spread.png)
-
-我们可以用公式来更准确的计算这个过程，在风险管理中，有一个风险中性概率违约公式。假设我们期初购买了一个没有利息的债券，该债券会在T时刻以1万元的价格兑付，那么请问这个债券价格现在应该定多少？债券的真实收益率应该是多少？
-
-利用我们之前介绍计NPV和IRR的方法，我们可以知道债券的现值等于未来现金流的折现，在债券中的IRR又可以称为到期收益率YTM（Yield to Maturity），但是考虑到持有这个债券的风险，我们有PD（Probability of Default）的概率违约，违约后的回收率是RR（Recovery Rate），如果不违约我们能拿回1万元，所以就有了右边的式子。
-$$
-V_{bond} = \frac{1}{(1+YTM)^T} = \frac{PD\times1\times RR + (1-PD)*1}{(1+r_f)^T}
-$$
-其实在风控当中，我们也就在尽量的减少PD和提升RR，这样我们可以在放贷利率不变的情况下获取更大收益，也可以降低利率吸引贷款扩大竞争优势。
 
 **扩展阅读：**
 
 [1] [【债券知识】收益率差 Yield Spread](https://www.sohu.com/a/300357590_820538)
-
-[2] [信用风险违约概率测量](https://zhuanlan.zhihu.com/p/400486839?ivk_sa=1024320u)
 
 ### 风险理论
 
@@ -714,41 +706,6 @@ plt.show()
 
 ![](./pics/VaR.png)
 
-##### VaR可视化代码
-
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from pylab import mpl 
-import scipy.stats as st
-mpl.rcParams['font.sans-serif'] = ['SimHei']
-mpl.rcParams['axes.unicode_minus'] = False
-
-a = 0.95  # 设置95%的置信水平
-
-z = st.norm.ppf(q=1-a)
-x = np.linspace(-4, 4, 200) # 投资组合盈亏的数组
-y = st.norm.pdf(x) # 投资组合盈亏对应的概率密度数组  
-x1 = np.linspace(-4, z, 100)
-y1 = st.norm.pdf(x1)
-
-plt.figure(figsize=(8, 6))
-plt.plot(x, y, 'r-', lw=2.0)
-plt.fill_between(x1, y1)
-plt.xlabel(u'投资组合盈亏', fontsize=13)
-plt.ylabel(u'盈亏的概率密度', fontsize=13, rotation=0)
-plt.xticks(fontsize=13)
-plt.yticks(fontsize=13)
-plt.ylim(0, 0.45)
-plt.annotate('VaR', xy=(z, st.norm.pdf(z)), xytext=(-1.9, 0.18), arrowprops=dict(shrink=0.01), fontsize=13)
-plt.title(u'假定盈亏服从正态分布的风险价值(VaR)', fontsize=13)
-plt.grid('True')
-plt.show()
-```
-
-![](./pics/VaR可视化.png)
-
 ##### Expected Shortfall
 
 ![](./pics/CVAR.png)
@@ -804,6 +761,8 @@ VaR值在金融市场风险管理中起到了关键作用。银行作为经济�
 [3] [Copula系列（一）-什么是Copula函数](https://zhuanlan.zhihu.com/p/138800469)
 
 [4] [三个版本的《巴塞尔协议》有什么区别？](https://www.zhihu.com/question/67620585)
+
+#### 
 
 ## 证券投资
 
@@ -928,12 +887,6 @@ Opportunity cost，因为没有交易到带来的机会成本：（12-10）x 300
 - 主动投资中和量化相关的可能是研究价值和成长以及因子
 
 ![](./pics/传统股票交易策略.png)
-
-### 高频交易
-
-A股目前是不适合高频交易的，高频交易是通过反复交易，在价格的微小变化获利，A股目前是T+1制度，股票购买之后要等到第二天才能卖，所以，在A股市场不能日内买卖，不能做高频交易。但是，如果要做高频交易，可以通过股指期货和大宗商品期货市场上做，期货市场是T+0制度，流动性也很好，高频交易容量很大。
-
-
 
 ## 实务知识
 
